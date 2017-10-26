@@ -9,4 +9,8 @@ VBoxManage list runningvms | cut -d "{" -f1 | sed "s/\"//g" | while read VBOXNAM
     IP=$(VBoxManage guestproperty get "$VBOXNAME" /VirtualBox/GuestInfo/Net/1/V4/IP | cut -d":" -f2)
     echo "$VBOXNAME: $IP"
 done
-1111
+
+
+
+
+https://www.virtualbox.org/manual/ 
